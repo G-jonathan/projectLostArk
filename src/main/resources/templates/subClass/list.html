@@ -9,5 +9,29 @@
     <a href="/">Home page</a>&nbsp;|&nbsp;
     <a href="/engravings/list">Liste des gravures</a>
 </div>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>name</th>
+        <th>archetype</th>
+        <th>engraving1</th>
+        <th>engraving2</th>
+        <th>characteristic1</th>
+        <th>characteristic2</th>
+        <th>optimization</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="subClass : ${sub_class_list}">
+        <td style="width: 10%" th:text="${subClass.name}"></td>
+        <td th:text="${subClass.archetype}"></td>
+        <td th:text="${subClass.engraving1}"></td>
+        <td th:text="${subClass.engraving2}"></td>
+        <td th:text="${subClass.characteristic1}"></td>
+        <td th:text="${subClass.characteristic2}"></td>
+        <td style="width: 25%" th:text="${subClass.optimization}"></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
