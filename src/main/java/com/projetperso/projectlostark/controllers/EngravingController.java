@@ -7,13 +7,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class SubClassController {
+public class EngravingController {
     @Autowired
     private ISubClassService subClassService;
 
-    @RequestMapping("/subClass/list")
+    @RequestMapping("/engravings/list")
     public String showList(Model model) {
-        model.addAttribute("sub_class_list", subClassService.findAllSubClass());
-        return "subClass/list";
+        model.addAttribute("engravings_list");
+        return "/engravings/list";
     }
 }
