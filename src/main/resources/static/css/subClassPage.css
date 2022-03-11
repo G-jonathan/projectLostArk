@@ -21,8 +21,8 @@ h1 {
 
 nav {
     text-align: center;
-    padding-bottom: 0.3%;
-    padding-top: 0.3%;
+    padding-bottom: 0.25%;
+    padding-top: 0.15%;
 }
 
 li {
@@ -49,19 +49,29 @@ form {
     text-align: center;
 }
 
+select {
+    padding: 0.5%;
+    background-color: #CEB586;
+}
+
+input {
+    padding: 0.5%;
+    background-color: #CEB586;
+    margin-left: 1%;
+}
+
 a {
-    color: white;
-    font-weight: bold;
+    color: black;
 }
 
 table, th, td {
-    border: 2px solid white;
+    border: 2px solid #CEB586;
     color: #CEB586;
 }
 
 th {
     padding: 2%;
-    font-size: medium;
+    font-size: 18px;
 }
 
 td {
@@ -73,6 +83,9 @@ table {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+}
+html{
+}
+.table-container {
     padding-bottom: 1%;
-    margin-bottom: 1%;
 }

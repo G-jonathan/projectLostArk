@@ -6,4 +6,6 @@ import java.util.List;
 public interface ISubClassService {
 
     List<SubClass> findAllSubClass();
+
+    List<SubClass> findSpecificSubClass();
 }
