@@ -7,220 +7,220 @@
 </head>
 <body>
 <div class="main-container">
-<header>
-    <h1> Liste des classes </h1>
-</header>
-<nav>
-    <ul>
-        <li><a href="/">Home page</a>&nbsp;|&nbsp</li>
-        <li><a href="/engravings/list">Liste des gravures</a></li>
-    </ul>
-</nav>
-<div class="central-container">
-    <form th:action="@{/subClass/update}" th:object="${subClass}" method="post">
-        <select name="engraving1" th:field="*{engraving1}">
-            <option selected th:value="subClass.engraving1">Aucune</option>
-            <option th:value="subClass.engraving1">Adrénaline</option>
-            <option th:value="subClass.engraving1">Arme affûtée</option>
-            <option th:value="subClass.engraving1">Attaque totale</option>
-            <option th:value="subClass.engraving1">Augmentation d'éfficacité des pm</option>
-            <option th:value="subClass.engraving1">Augmentation de masse</option>
-            <option th:value="subClass.engraving1">Augmentation des PM max</option>
-            <option th:value="subClass.engraving1">Bagarreur expert</option>
-            <option th:value="subClass.engraving1">Barricade</option>
-            <option th:value="subClass.engraving1">Bouclier amélioré</option>
-            <option th:value="subClass.engraving1">Brise-bouclier</option>
-            <option th:value="subClass.engraving1">Capitaine de raid</option>
-            <option th:value="subClass.engraving1">Capture d'âme</option>
-            <option th:value="subClass.engraving1">Charge lourde</option>
-            <option th:value="subClass.engraving1">Concurrent</option>
-            <option th:value="subClass.engraving1">Dague précise</option>
-            <option th:value="subClass.engraving1">Détermination</option>
-            <option th:value="subClass.engraving1">Expert</option>
-            <option th:value="subClass.engraving1">Expert en explosifs</option>
-            <option th:value="subClass.engraving1">Equilibre</option>
-            <option th:value="subClass.engraving1">Equipement d'armure lourde</option>
-            <option th:value="subClass.engraving1">Evasion critique</option>
-            <option th:value="subClass.engraving1">Eveil</option>
-            <option th:value="subClass.engraving1">Flux de magie</option>
-            <option th:value="subClass.engraving1">Focalisation visuelle</option>
-            <option th:value="subClass.engraving1">Force d'âme</option>
-            <option th:value="subClass.engraving1">Fracture</option>
-            <option th:value="subClass.engraving1">Frappe des points vitaux</option>
-            <option th:value="subClass.engraving1">Frappe préventive</option>
-            <option th:value="subClass.engraving1">Furie foudroyante</option>
-            <option th:value="subClass.engraving1">Gouttes d'éther</option>
-            <option th:value="subClass.engraving1">Irrévérence</option>
-            <option th:value="subClass.engraving1">Maître de l'embuscade</option>
-            <option th:value="subClass.engraving1">Maître de l'évasion</option>
-            <option th:value="subClass.engraving1">Maître de la frappe</option>
-            <option th:value="subClass.engraving1">Nécromancie</option>
-            <option th:value="subClass.engraving1">Poing écrasant</option>
-            <option th:value="subClass.engraving1">Poupée maudite</option>
-            <option th:value="subClass.engraving1">propulsion</option>
-            <option th:value="subClass.engraving1">Protection divine</option>
-            <option th:value="subClass.engraving1">Prédateur d'éther</option>
-            <option th:value="subClass.engraving1">Retour de flamme</option>
-            <option th:value="subClass.engraving1">Sauvetage d'urgence</option>
-            <option th:value="subClass.engraving1">Ténacité invaincue</option>
-            <option th:value="subClass.engraving1">Pistolancier]Aptitude au combat</option>
-            <option th:value="subClass.engraving1">[Pistolancier]Chevalier solitaire</option>
-            <option th:value="subClass.engraving1">[Berserker]Technique du berserker</option>
-            <option th:value="subClass.engraving1">Berserker]Chaos</option>
-            <option th:value="subClass.engraving1">[Paladin]Aura de bénédiction</option>
-            <option th:value="subClass.engraving1">[Paladin]Jugement</option>
-            <option th:value="subClass.engraving1">[Elementiste]Amélioration des compétences ésotériques</option>
-            <option th:value="subClass.engraving1">[Elementiste]Première intention</option>
-            <option th:value="subClass.engraving1">[Essentialiste]Déchaînement ésotérique</option>
-            <option th:value="subClass.engraving1">[Essentialiste]Coup fatal</option>
-            <option th:value="subClass.engraving1">[Spirite]Esprit robuste</option>
-            <option th:value="subClass.engraving1">[Spirite]Énergie débordante</option>
-            <option th:value="subClass.engraving1">[Pugiliste]Ultime : Taijutsu</option>
-            <option th:value="subClass.engraving1">[Pugiliste]Entraînement de choc</option>
-            <option th:value="subClass.engraving1">[Franc-tireur]Arme améliorée</option>
-            <option th:value="subClass.engraving1">[Franc-tireur]Pistolier</option>
-            <option th:value="subClass.engraving1">[Fusiliere]Heure de la chasse</option>
-            <option th:value="subClass.engraving1">[Fusiliere]Pacificateur</option>
-            <option th:value="subClass.engraving1">[Sagitaire]Fidèle compagnon</option>
-            <option th:value="subClass.engraving1">[Sagitaire]Frappe mortelle</option>
-            <option th:value="subClass.engraving1">[Artilleur]Puissance de feu améliorée</option>
-            <option th:value="subClass.engraving1">[Artilleur]Barrage amélioré</option>
-            <option th:value="subClass.engraving1">[Sorcière]Igniteur</option>
-            <option th:value="subClass.engraving1">[Sorcière]Reflux</option>
-            <option th:value="subClass.engraving1">[Barde]Dernier recours</option>
-            <option th:value="subClass.engraving1">[Barde]Cœur vaillant</option>
-            <option th:value="subClass.engraving1">[Sanguelame]Énergie résiduelle</option>
-            <option th:value="subClass.engraving1">[Sanguelame]Fureur</option>
-            <option th:value="subClass.engraving1">[Démoniste]Suppression parfaite</option>
-            <option th:value="subClass.engraving1">[Démoniste]Pulsion démoniaque</option>
-        </select>
-        <select name="engraving2" th:field="*{engraving2}">
-            <option selected th:value="subClass.engraving2">Aucune</option>
-            <option th:value="subClass.engraving2">Adrénaline</option>
-            <option th:value="subClass.engraving2">Arme affûtée</option>
-            <option th:value="subClass.engraving2">Attaque totale</option>
-            <option th:value="subClass.engraving2">Augmentation d'éfficacité des pm</option>
-            <option th:value="subClass.engraving2">Augmentation de masse</option>
-            <option th:value="subClass.engraving2">Augmentation des PM max</option>
-            <option th:value="subClass.engraving2">Bagarreur expert</option>
-            <option th:value="subClass.engraving2">Barricade</option>
-            <option th:value="subClass.engraving2">Bouclier amélioré</option>
-            <option th:value="subClass.engraving2">Brise-bouclier</option>
-            <option th:value="subClass.engraving2">Capitaine de raid</option>
-            <option th:value="subClass.engraving2">Capture d'âme</option>
-            <option th:value="subClass.engraving2">Charge lourde</option>
-            <option th:value="subClass.engraving2">Concurrent</option>
-            <option th:value="subClass.engraving2">Dague précise</option>
-            <option th:value="subClass.engraving2">Détermination</option>
-            <option th:value="subClass.engraving2">Expert</option>
-            <option th:value="subClass.engraving2">Expert en explosifs</option>
-            <option th:value="subClass.engraving2">Equilibre</option>
-            <option th:value="subClass.engraving2">Equipement d'armure lourde</option>
-            <option th:value="subClass.engraving2">Evasion critique</option>
-            <option th:value="subClass.engraving2">Eveil</option>
-            <option th:value="subClass.engraving2">Flux de magie</option>
-            <option th:value="subClass.engraving2">Focalisation visuelle</option>
-            <option th:value="subClass.engraving2">Force d'âme</option>
-            <option th:value="subClass.engraving2">Fracture</option>
-            <option th:value="subClass.engraving2">Frappe des points vitaux</option>
-            <option th:value="subClass.engraving2">Frappe préventive</option>
-            <option th:value="subClass.engraving2">Furie foudroyante</option>
-            <option th:value="subClass.engraving2">Gouttes d'éther</option>
-            <option th:value="subClass.engraving2">Irrévérence</option>
-            <option th:value="subClass.engraving2">Maître de l'embuscade</option>
-            <option th:value="subClass.engraving2">Maître de l'évasion</option>
-            <option th:value="subClass.engraving2">Maître de la frappe</option>
-            <option th:value="subClass.engraving2">Nécromancie</option>
-            <option th:value="subClass.engraving2">Poing écrasant</option>
-            <option th:value="subClass.engraving2">Poupée maudite</option>
-            <option th:value="subClass.engraving2">propulsion</option>
-            <option th:value="subClass.engraving2">Protection divine</option>
-            <option th:value="subClass.engraving2">Prédateur d'éther</option>
-            <option th:value="subClass.engraving2">Retour de flamme</option>
-            <option th:value="subClass.engraving2">Sauvetage d'urgence</option>
-            <option th:value="subClass.engraving2">Ténacité invaincue</option>
-            <option th:value="subClass.engraving2">Pistolancier]Aptitude au combat</option>
-            <option th:value="subClass.engraving2">[Pistolancier]Chevalier solitaire</option>
-            <option th:value="subClass.engraving2">[Berserker]Technique du berserker</option>
-            <option th:value="subClass.engraving2">Berserker]Chaos</option>
-            <option th:value="subClass.engraving2">[Paladin]Aura de bénédiction</option>
-            <option th:value="subClass.engraving2">[Paladin]Jugement</option>
-            <option th:value="subClass.engraving2">[Elementiste]Amélioration des compétences ésotériques</option>
-            <option th:value="subClass.engraving2">[Elementiste]Première intention</option>
-            <option th:value="subClass.engraving2">[Essentialiste]Déchaînement ésotérique</option>
-            <option th:value="subClass.engraving2">[Essentialiste]Coup fatal</option>
-            <option th:value="subClass.engraving2">[Spirite]Esprit robuste</option>
-            <option th:value="subClass.engraving2">[Spirite]Énergie débordante</option>
-            <option th:value="subClass.engraving2">[Pugiliste]Ultime : Taijutsu</option>
-            <option th:value="subClass.engraving2">[Pugiliste]Entraînement de choc</option>
-            <option th:value="subClass.engraving2">[Franc-tireur]Arme améliorée</option>
-            <option th:value="subClass.engraving2">[Franc-tireur]Pistolier</option>
-            <option th:value="subClass.engraving2">[Fusiliere]Heure de la chasse</option>
-            <option th:value="subClass.engraving2">[Fusiliere]Pacificateur</option>
-            <option th:value="subClass.engraving2">[Sagitaire]Fidèle compagnon</option>
-            <option th:value="subClass.engraving2">[Sagitaire]Frappe mortelle</option>
-            <option th:value="subClass.engraving2">[Artilleur]Puissance de feu améliorée</option>
-            <option th:value="subClass.engraving2">[Artilleur]Barrage amélioré</option>
-            <option th:value="subClass.engraving2">[Sorcière]Igniteur</option>
-            <option th:value="subClass.engraving2">[Sorcière]Reflux</option>
-            <option th:value="subClass.engraving2">[Barde]Dernier recours</option>
-            <option th:value="subClass.engraving2">[Barde]Cœur vaillant</option>
-            <option th:value="subClass.engraving2">[Sanguelame]Énergie résiduelle</option>
-            <option th:value="subClass.engraving2">[Sanguelame]Fureur</option>
-            <option th:value="subClass.engraving2">[Démoniste]Suppression parfaite</option>
-            <option th:value="subClass.engraving2">[Démoniste]Pulsion démoniaque</option>
-        </select>
-        <select name="characteristic1" th:field="*{characteristic1}">
-            <option selected th:value="subClass.characteristic1">Aucune</option>
-            <option th:value="subClass.characteristic1">Dégats critiques</option>
-            <option th:value="subClass.characteristic1">Spécialisation</option>
-            <option th:value="subClass.characteristic1">Domination</option>
-            <option th:value="subClass.characteristic1">Rapidité</option>
-            <option th:value="subClass.characteristic1">Endurance</option>
-            <option th:value="subClass.characteristic1">Expertise</option>
-        </select>
-        <select name="characteristic2" th:field="*{characteristic2}">
-            <option selected th:value="subClass.characteristic2">Aucune</option>
-            <option th:value="subClass.characteristic2">Dégats critiques</option>
-            <option th:value="subClass.characteristic2">Spécialisation</option>
-            <option th:value="subClass.characteristic2">Domination</option>
-            <option th:value="subClass.characteristic2">Rapidité</option>
-            <option th:value="subClass.characteristic2">Endurance</option>
-            <option th:value="subClass.characteristic2">Expertise</option>
-        </select>
-        <input type="submit" value="   Rechercher   ">
-    </form>
-    <div class="table-container">
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Archétype</th>
-            <th>Gravure 1</th>
-            <th>Gravure 2</th>
-            <th>Caractéristique 1</th>
-            <th>Caractéristique 2</th>
-            <th>Spécialisation</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="subClass : ${sub_class_list}">
-            <td style="width: 10%" th:text="${subClass.name}"></td>
-            <td th:text="${subClass.archetype}"></td>
-            <td th:text="${subClass.engraving1}"></td>
-            <td th:text="${subClass.engraving2}"></td>
-            <td th:text="${subClass.characteristic1}"></td>
-            <td th:text="${subClass.characteristic2}"></td>
-            <td style="width: 25%" th:text="${subClass.specialization}"></td>
-        </tr>
-        </tbody>
-    </table>
+    <header>
+        <h1> Liste des classes </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home page</a>&nbsp;|&nbsp</li>
+            <li><a href="/engravings/list">Liste des gravures</a></li>
+        </ul>
+    </nav>
+    <div class="central-container">
+        <form th:action="@{/subClass/update}" th:object="${subClass}" method="post">
+            <select name="engraving1" th:field="*{engraving1}">
+                <option selected th:value="subClass.engraving1">Aucune</option>
+                <option th:value="subClass.engraving1">Adrénaline</option>
+                <option th:value="subClass.engraving1">Arme affûtée</option>
+                <option th:value="subClass.engraving1">Attaque totale</option>
+                <option th:value="subClass.engraving1">Augmentation d'éfficacité des pm</option>
+                <option th:value="subClass.engraving1">Augmentation de masse</option>
+                <option th:value="subClass.engraving1">Augmentation des PM max</option>
+                <option th:value="subClass.engraving1">Bagarreur expert</option>
+                <option th:value="subClass.engraving1">Barricade</option>
+                <option th:value="subClass.engraving1">Bouclier amélioré</option>
+                <option th:value="subClass.engraving1">Brise-bouclier</option>
+                <option th:value="subClass.engraving1">Capitaine de raid</option>
+                <option th:value="subClass.engraving1">Capture d'âme</option>
+                <option th:value="subClass.engraving1">Charge lourde</option>
+                <option th:value="subClass.engraving1">Concurrent</option>
+                <option th:value="subClass.engraving1">Dague précise</option>
+                <option th:value="subClass.engraving1">Détermination</option>
+                <option th:value="subClass.engraving1">Expert</option>
+                <option th:value="subClass.engraving1">Expert en explosifs</option>
+                <option th:value="subClass.engraving1">Equilibre</option>
+                <option th:value="subClass.engraving1">Equipement d'armure lourde</option>
+                <option th:value="subClass.engraving1">Evasion critique</option>
+                <option th:value="subClass.engraving1">Eveil</option>
+                <option th:value="subClass.engraving1">Flux de magie</option>
+                <option th:value="subClass.engraving1">Focalisation visuelle</option>
+                <option th:value="subClass.engraving1">Force d'âme</option>
+                <option th:value="subClass.engraving1">Fracture</option>
+                <option th:value="subClass.engraving1">Frappe des points vitaux</option>
+                <option th:value="subClass.engraving1">Frappe préventive</option>
+                <option th:value="subClass.engraving1">Furie foudroyante</option>
+                <option th:value="subClass.engraving1">Gouttes d'éther</option>
+                <option th:value="subClass.engraving1">Irrévérence</option>
+                <option th:value="subClass.engraving1">Maître de l'embuscade</option>
+                <option th:value="subClass.engraving1">Maître de l'évasion</option>
+                <option th:value="subClass.engraving1">Maître de la frappe</option>
+                <option th:value="subClass.engraving1">Nécromancie</option>
+                <option th:value="subClass.engraving1">Poing écrasant</option>
+                <option th:value="subClass.engraving1">Poupée maudite</option>
+                <option th:value="subClass.engraving1">propulsion</option>
+                <option th:value="subClass.engraving1">Protection divine</option>
+                <option th:value="subClass.engraving1">Prédateur d'éther</option>
+                <option th:value="subClass.engraving1">Retour de flamme</option>
+                <option th:value="subClass.engraving1">Sauvetage d'urgence</option>
+                <option th:value="subClass.engraving1">Ténacité invaincue</option>
+                <option th:value="subClass.engraving1">Pistolancier]Aptitude au combat</option>
+                <option th:value="subClass.engraving1">[Pistolancier]Chevalier solitaire</option>
+                <option th:value="subClass.engraving1">[Berserker]Technique du berserker</option>
+                <option th:value="subClass.engraving1">Berserker]Chaos</option>
+                <option th:value="subClass.engraving1">[Paladin]Aura de bénédiction</option>
+                <option th:value="subClass.engraving1">[Paladin]Jugement</option>
+                <option th:value="subClass.engraving1">[Elementiste]Amélioration des compétences ésotériques</option>
+                <option th:value="subClass.engraving1">[Elementiste]Première intention</option>
+                <option th:value="subClass.engraving1">[Essentialiste]Déchaînement ésotérique</option>
+                <option th:value="subClass.engraving1">[Essentialiste]Coup fatal</option>
+                <option th:value="subClass.engraving1">[Spirite]Esprit robuste</option>
+                <option th:value="subClass.engraving1">[Spirite]Énergie débordante</option>
+                <option th:value="subClass.engraving1">[Pugiliste]Ultime : Taijutsu</option>
+                <option th:value="subClass.engraving1">[Pugiliste]Entraînement de choc</option>
+                <option th:value="subClass.engraving1">[Franc-tireur]Arme améliorée</option>
+                <option th:value="subClass.engraving1">[Franc-tireur]Pistolier</option>
+                <option th:value="subClass.engraving1">[Fusiliere]Heure de la chasse</option>
+                <option th:value="subClass.engraving1">[Fusiliere]Pacificateur</option>
+                <option th:value="subClass.engraving1">[Sagitaire]Fidèle compagnon</option>
+                <option th:value="subClass.engraving1">[Sagitaire]Frappe mortelle</option>
+                <option th:value="subClass.engraving1">[Artilleur]Puissance de feu améliorée</option>
+                <option th:value="subClass.engraving1">[Artilleur]Barrage amélioré</option>
+                <option th:value="subClass.engraving1">[Sorcière]Igniteur</option>
+                <option th:value="subClass.engraving1">[Sorcière]Reflux</option>
+                <option th:value="subClass.engraving1">[Barde]Dernier recours</option>
+                <option th:value="subClass.engraving1">[Barde]Cœur vaillant</option>
+                <option th:value="subClass.engraving1">[Sanguelame]Énergie résiduelle</option>
+                <option th:value="subClass.engraving1">[Sanguelame]Fureur</option>
+                <option th:value="subClass.engraving1">[Démoniste]Suppression parfaite</option>
+                <option th:value="subClass.engraving1">[Démoniste]Pulsion démoniaque</option>
+            </select>
+            <select name="engraving2" th:field="*{engraving2}">
+                <option selected th:value="subClass.engraving2">Aucune</option>
+                <option th:value="subClass.engraving2">Adrénaline</option>
+                <option th:value="subClass.engraving2">Arme affûtée</option>
+                <option th:value="subClass.engraving2">Attaque totale</option>
+                <option th:value="subClass.engraving2">Augmentation d'éfficacité des pm</option>
+                <option th:value="subClass.engraving2">Augmentation de masse</option>
+                <option th:value="subClass.engraving2">Augmentation des PM max</option>
+                <option th:value="subClass.engraving2">Bagarreur expert</option>
+                <option th:value="subClass.engraving2">Barricade</option>
+                <option th:value="subClass.engraving2">Bouclier amélioré</option>
+                <option th:value="subClass.engraving2">Brise-bouclier</option>
+                <option th:value="subClass.engraving2">Capitaine de raid</option>
+                <option th:value="subClass.engraving2">Capture d'âme</option>
+                <option th:value="subClass.engraving2">Charge lourde</option>
+                <option th:value="subClass.engraving2">Concurrent</option>
+                <option th:value="subClass.engraving2">Dague précise</option>
+                <option th:value="subClass.engraving2">Détermination</option>
+                <option th:value="subClass.engraving2">Expert</option>
+                <option th:value="subClass.engraving2">Expert en explosifs</option>
+                <option th:value="subClass.engraving2">Equilibre</option>
+                <option th:value="subClass.engraving2">Equipement d'armure lourde</option>
+                <option th:value="subClass.engraving2">Evasion critique</option>
+                <option th:value="subClass.engraving2">Eveil</option>
+                <option th:value="subClass.engraving2">Flux de magie</option>
+                <option th:value="subClass.engraving2">Focalisation visuelle</option>
+                <option th:value="subClass.engraving2">Force d'âme</option>
+                <option th:value="subClass.engraving2">Fracture</option>
+                <option th:value="subClass.engraving2">Frappe des points vitaux</option>
+                <option th:value="subClass.engraving2">Frappe préventive</option>
+                <option th:value="subClass.engraving2">Furie foudroyante</option>
+                <option th:value="subClass.engraving2">Gouttes d'éther</option>
+                <option th:value="subClass.engraving2">Irrévérence</option>
+                <option th:value="subClass.engraving2">Maître de l'embuscade</option>
+                <option th:value="subClass.engraving2">Maître de l'évasion</option>
+                <option th:value="subClass.engraving2">Maître de la frappe</option>
+                <option th:value="subClass.engraving2">Nécromancie</option>
+                <option th:value="subClass.engraving2">Poing écrasant</option>
+                <option th:value="subClass.engraving2">Poupée maudite</option>
+                <option th:value="subClass.engraving2">propulsion</option>
+                <option th:value="subClass.engraving2">Protection divine</option>
+                <option th:value="subClass.engraving2">Prédateur d'éther</option>
+                <option th:value="subClass.engraving2">Retour de flamme</option>
+                <option th:value="subClass.engraving2">Sauvetage d'urgence</option>
+                <option th:value="subClass.engraving2">Ténacité invaincue</option>
+                <option th:value="subClass.engraving2">Pistolancier]Aptitude au combat</option>
+                <option th:value="subClass.engraving2">[Pistolancier]Chevalier solitaire</option>
+                <option th:value="subClass.engraving2">[Berserker]Technique du berserker</option>
+                <option th:value="subClass.engraving2">Berserker]Chaos</option>
+                <option th:value="subClass.engraving2">[Paladin]Aura de bénédiction</option>
+                <option th:value="subClass.engraving2">[Paladin]Jugement</option>
+                <option th:value="subClass.engraving2">[Elementiste]Amélioration des compétences ésotériques</option>
+                <option th:value="subClass.engraving2">[Elementiste]Première intention</option>
+                <option th:value="subClass.engraving2">[Essentialiste]Déchaînement ésotérique</option>
+                <option th:value="subClass.engraving2">[Essentialiste]Coup fatal</option>
+                <option th:value="subClass.engraving2">[Spirite]Esprit robuste</option>
+                <option th:value="subClass.engraving2">[Spirite]Énergie débordante</option>
+                <option th:value="subClass.engraving2">[Pugiliste]Ultime : Taijutsu</option>
+                <option th:value="subClass.engraving2">[Pugiliste]Entraînement de choc</option>
+                <option th:value="subClass.engraving2">[Franc-tireur]Arme améliorée</option>
+                <option th:value="subClass.engraving2">[Franc-tireur]Pistolier</option>
+                <option th:value="subClass.engraving2">[Fusiliere]Heure de la chasse</option>
+                <option th:value="subClass.engraving2">[Fusiliere]Pacificateur</option>
+                <option th:value="subClass.engraving2">[Sagitaire]Fidèle compagnon</option>
+                <option th:value="subClass.engraving2">[Sagitaire]Frappe mortelle</option>
+                <option th:value="subClass.engraving2">[Artilleur]Puissance de feu améliorée</option>
+                <option th:value="subClass.engraving2">[Artilleur]Barrage amélioré</option>
+                <option th:value="subClass.engraving2">[Sorcière]Igniteur</option>
+                <option th:value="subClass.engraving2">[Sorcière]Reflux</option>
+                <option th:value="subClass.engraving2">[Barde]Dernier recours</option>
+                <option th:value="subClass.engraving2">[Barde]Cœur vaillant</option>
+                <option th:value="subClass.engraving2">[Sanguelame]Énergie résiduelle</option>
+                <option th:value="subClass.engraving2">[Sanguelame]Fureur</option>
+                <option th:value="subClass.engraving2">[Démoniste]Suppression parfaite</option>
+                <option th:value="subClass.engraving2">[Démoniste]Pulsion démoniaque</option>
+            </select>
+            <select name="characteristic1" th:field="*{characteristic1}">
+                <option selected th:value="subClass.characteristic1">Aucune</option>
+                <option th:value="subClass.characteristic1">Dégats critiques</option>
+                <option th:value="subClass.characteristic1">Spécialisation</option>
+                <option th:value="subClass.characteristic1">Domination</option>
+                <option th:value="subClass.characteristic1">Rapidité</option>
+                <option th:value="subClass.characteristic1">Endurance</option>
+                <option th:value="subClass.characteristic1">Expertise</option>
+            </select>
+            <select name="characteristic2" th:field="*{characteristic2}">
+                <option selected th:value="subClass.characteristic2">Aucune</option>
+                <option th:value="subClass.characteristic2">Dégats critiques</option>
+                <option th:value="subClass.characteristic2">Spécialisation</option>
+                <option th:value="subClass.characteristic2">Domination</option>
+                <option th:value="subClass.characteristic2">Rapidité</option>
+                <option th:value="subClass.characteristic2">Endurance</option>
+                <option th:value="subClass.characteristic2">Expertise</option>
+            </select>
+            <input type="submit" value="   Rechercher   ">
+        </form>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Archétype</th>
+                    <th>Gravure 1</th>
+                    <th>Gravure 2</th>
+                    <th>Caractéristique 1</th>
+                    <th>Caractéristique 2</th>
+                    <th>Spécialisation</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="subClass : ${sub_class_list}">
+                    <td style="width: 10%" th:text="${subClass.name}"></td>
+                    <td th:text="${subClass.archetype}"></td>
+                    <td th:text="${subClass.engraving1}"></td>
+                    <td th:text="${subClass.engraving2}"></td>
+                    <td th:text="${subClass.characteristic1}"></td>
+                    <td th:text="${subClass.characteristic2}"></td>
+                    <td style="width: 25%" th:text="${subClass.specialization}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
-<footer>
-    <p>Version ALPHA - Work in progress
-    <p>Copyright Jonathan.G - Tous droits réservés</p>
-</footer>
+    <footer>
+        <p>Version ALPHA - Work in progress
+        <p>Copyright Jonathan.G - Tous droits réservés</p>
+    </footer>
 </div>
 </body>
 </html>

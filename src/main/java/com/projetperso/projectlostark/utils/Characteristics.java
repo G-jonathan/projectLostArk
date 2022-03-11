@@ -2,9 +2,9 @@ package com.projetperso.projectlostark.utils;
 
 public enum Characteristics {
     DEGATS_CRITIQUES("Dégats critiques"),
-    SPECIALISATION("Spécialisation"),
+    SPECIALISATION("Spécialisation"), //Specialization
     DOMINATION("Domination"),
-    RAPIDITE("Rapidité"),
+    RAPIDITE("Rapidité"), //Swiftness
     ENDURANCE("Endurance"),
     EXPERTISE("Expertise");
 
