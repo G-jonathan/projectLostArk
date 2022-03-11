@@ -22,7 +22,7 @@ public class SubClassController {
 
     @PostMapping("/subClass/update")
     public String updateList(SubClass subClass, Model model) {
-        List<SubClass> resultList = subClassService.findSpecificSubClass();
+        List<SubClass> resultList = subClassService.findSpecificSubClass(subClass);
         model.addAttribute("sub_class_list", resultList);
         return "subClass/list";
     }

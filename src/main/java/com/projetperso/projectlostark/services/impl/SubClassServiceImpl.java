@@ -14,13 +14,96 @@ public class SubClassServiceImpl implements ISubClassService {
     @Autowired
     private SubClassRepository subClassRepository;
 
+    public static String EMPTY = "Aucune";
+
     @Override
     public List<SubClass> findAllSubClass() {
         return subClassRepository.findAll();
     }
 
     @Override
-    public List<SubClass> findSpecificSubClass() {
+    public List<SubClass> findSpecificSubClass(SubClass subClass) {
+        if (!subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (!subClass.getEngraving1().equals(EMPTY)
+                & !subClass.getEngraving2().equals(EMPTY)
+                & !subClass.getCharacteristic1().equals(EMPTY)
+                & !subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+        else if (subClass.getEngraving1().equals(EMPTY)
+                & subClass.getEngraving2().equals(EMPTY)
+                & subClass.getCharacteristic1().equals(EMPTY)
+                & subClass.getCharacteristic2().equals(EMPTY)) {
+        }
+
         SubClass test = new SubClass();
         test.setName("test");
         test.setCharacteristic1("test");

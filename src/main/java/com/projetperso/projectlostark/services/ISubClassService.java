@@ -7,5 +7,5 @@ public interface ISubClassService {
 
     List<SubClass> findAllSubClass();
 
-    List<SubClass> findSpecificSubClass();
+    List<SubClass> findSpecificSubClass(SubClass subClass);
 }
