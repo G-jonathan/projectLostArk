@@ -6,24 +6,200 @@
     <link rel="stylesheet" href="/css/subClassPage.css">
 </head>
 <body>
-<div class="mainContainer">
+<div class="main-container">
+<header>
     <h1> Liste des classes </h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home page</a></li>
-            <li><a href="/engravings/list">Liste des gravures</a></li>
-        </ul>
-    </nav>
+</header>
+<nav>
+    <ul>
+        <li><a href="/">Home page</a>&nbsp;|&nbsp</li>
+        <li><a href="/engravings/list">Liste des gravures</a></li>
+    </ul>
+</nav>
+<div class="central-container">
+    <form>
+        <select name="engraving1">
+            <option selected>Aucune</option>
+            <option>Adrénaline</option>
+            <option>Arme affûtée</option>
+            <option>Attaque totale</option>
+            <option>Augmentation d'éfficacité des pm</option>
+            <option>Augmentation de masse</option>
+            <option>Augmentation des PM max</option>
+            <option>Bagarreur expert</option>
+            <option>Barricade</option>
+            <option>Bouclier amélioré</option>
+            <option>Brise-bouclier</option>
+            <option>Capitaine de raid</option>
+            <option>Capture d'âme</option>
+            <option>Charge lourde</option>
+            <option>Concurrent</option>
+            <option>Dague précise</option>
+            <option>Détermination</option>
+            <option>Expert</option>
+            <option>Expert en explosifs</option>
+            <option>Equilibre</option>
+            <option>Equipement d'armure lourde</option>
+            <option>Evasion critique</option>
+            <option>Eveil</option>
+            <option>Flux de magie</option>
+            <option>Focalisation visuelle</option>
+            <option>Force d'âme</option>
+            <option>Fracture</option>
+            <option>Frappe des points vitaux</option>
+            <option>Frappe préventive</option>
+            <option>Furie foudroyante</option>
+            <option>Gouttes d'éther</option>
+            <option>Irrévérence</option>
+            <option>Maître de l'embuscade</option>
+            <option>Maître de l'évasion</option>
+            <option>Maître de la frappe</option>
+            <option>Nécromancie</option>
+            <option>Poing écrasant</option>
+            <option>Poupée maudite</option>
+            <option>propulsion</option>
+            <option>Protection divine</option>
+            <option>Prédateur d'éther</option>
+            <option>Retour de flamme</option>
+            <option>Sauvetage d'urgence</option>
+            <option>Ténacité invaincue</option>
+            <option>Pistolancier]Aptitude au combat</option>
+            <option>[Pistolancier]Chevalier solitaire</option>
+            <option>[Berserker]Technique du berserker</option>
+            <option>Berserker]Chaos</option>
+            <option>[Paladin]Aura de bénédiction</option>
+            <option>[Paladin]Jugement</option>
+            <option>[Elementiste]Amélioration des compétences ésotériques</option>
+            <option>[Elementiste]Première intention</option>
+            <option>[Essentialiste]Déchaînement ésotérique</option>
+            <option>[Essentialiste]Coup fatal</option>
+            <option>[Spirite]Esprit robuste</option>
+            <option>[Spirite]Énergie débordante</option>
+            <option>[Pugiliste]Ultime : Taijutsu</option>
+            <option>[Pugiliste]Entraînement de choc</option>
+            <option>[Franc-tireur]Arme améliorée</option>
+            <option>[Franc-tireur]Pistolier</option>
+            <option>[Fusiliere]Heure de la chasse</option>
+            <option>[Fusiliere]Pacificateur</option>
+            <option>[Sagitaire]Fidèle compagnon</option>
+            <option>[Sagitaire]Frappe mortelle</option>
+            <option>[Artilleur]Puissance de feu améliorée</option>
+            <option>[Artilleur]Barrage amélioré</option>
+            <option>[Sorcière]Igniteur</option>
+            <option>[Sorcière]Reflux</option>
+            <option>[Barde]Dernier recours</option>
+            <option>[Barde]Cœur vaillant</option>
+            <option>[Sanguelame]Énergie résiduelle</option>
+            <option>[Sanguelame]Fureur</option>
+            <option>[Démoniste]Suppression parfaite</option>
+            <option>[Démoniste]Pulsion démoniaque</option>
+        </select>
+        <select name="engraving2">
+            <option selected>Aucune</option>
+            <option>Adrénaline</option>
+            <option>Arme affûtée</option>
+            <option>Attaque totale</option>
+            <option>Augmentation d'éfficacité des pm</option>
+            <option>Augmentation de masse</option>
+            <option>Augmentation des PM max</option>
+            <option>Bagarreur expert</option>
+            <option>Barricade</option>
+            <option>Bouclier amélioré</option>
+            <option>Brise-bouclier</option>
+            <option>Capitaine de raid</option>
+            <option>Capture d'âme</option>
+            <option>Charge lourde</option>
+            <option>Concurrent</option>
+            <option>Dague précise</option>
+            <option>Détermination</option>
+            <option>Expert</option>
+            <option>Expert en explosifs</option>
+            <option>Equilibre</option>
+            <option>Equipement d'armure lourde</option>
+            <option>Evasion critique</option>
+            <option>Eveil</option>
+            <option>Flux de magie</option>
+            <option>Focalisation visuelle</option>
+            <option>Force d'âme</option>
+            <option>Fracture</option>
+            <option>Frappe des points vitaux</option>
+            <option>Frappe préventive</option>
+            <option>Furie foudroyante</option>
+            <option>Gouttes d'éther</option>
+            <option>Irrévérence</option>
+            <option>Maître de l'embuscade</option>
+            <option>Maître de l'évasion</option>
+            <option>Maître de la frappe</option>
+            <option>Nécromancie</option>
+            <option>Poing écrasant</option>
+            <option>Poupée maudite</option>
+            <option>propulsion</option>
+            <option>Protection divine</option>
+            <option>Prédateur d'éther</option>
+            <option>Retour de flamme</option>
+            <option>Sauvetage d'urgence</option>
+            <option>Ténacité invaincue</option>
+            <option>Pistolancier]Aptitude au combat</option>
+            <option>[Pistolancier]Chevalier solitaire</option>
+            <option>[Berserker]Technique du berserker</option>
+            <option>Berserker]Chaos</option>
+            <option>[Paladin]Aura de bénédiction</option>
+            <option>[Paladin]Jugement</option>
+            <option>[Elementiste]Amélioration des compétences ésotériques</option>
+            <option>[Elementiste]Première intention</option>
+            <option>[Essentialiste]Déchaînement ésotérique</option>
+            <option>[Essentialiste]Coup fatal</option>
+            <option>[Spirite]Esprit robuste</option>
+            <option>[Spirite]Énergie débordante</option>
+            <option>[Pugiliste]Ultime : Taijutsu</option>
+            <option>[Pugiliste]Entraînement de choc</option>
+            <option>[Franc-tireur]Arme améliorée</option>
+            <option>[Franc-tireur]Pistolier</option>
+            <option>[Fusiliere]Heure de la chasse</option>
+            <option>[Fusiliere]Pacificateur</option>
+            <option>[Sagitaire]Fidèle compagnon</option>
+            <option>[Sagitaire]Frappe mortelle</option>
+            <option>[Artilleur]Puissance de feu améliorée</option>
+            <option>[Artilleur]Barrage amélioré</option>
+            <option>[Sorcière]Igniteur</option>
+            <option>[Sorcière]Reflux</option>
+            <option>[Barde]Dernier recours</option>
+            <option>[Barde]Cœur vaillant</option>
+            <option>[Sanguelame]Énergie résiduelle</option>
+            <option>[Sanguelame]Fureur</option>
+            <option>[Démoniste]Suppression parfaite</option>
+            <option>[Démoniste]Pulsion démoniaque</option>
+        </select>
+        <select name="characteristic1">
+            <option selected>Aucune</option>
+            <option>Dégats critiques</option>
+            <option>Spécialisation</option>
+            <option>Domination</option>
+            <option>Rapidité</option>
+            <option>Endurance</option>
+            <option>Expertise</option>
+        </select>
+        <select name="characteristic2">
+            <option selected>Aucune</option>
+            <option>Dégats critiques</option>
+            <option>Spécialisation</option>
+            <option>Domination</option>
+            <option>Rapidité</option>
+            <option>Endurance</option>
+            <option>Expertise</option>
+        </select>
+        <input type="submit" value="Rechercher">
+    </form>
     <table class="table">
         <thead>
         <tr>
-            <th>name</th>
-            <th>archetype</th>
-            <th>engraving1</th>
-            <th>engraving2</th>
-            <th>characteristic1</th>
-            <th>characteristic2</th>
-            <th>optimization</th>
+            <th>Nom</th>
+            <th>Archétype</th>
+            <th>Gravure 1</th>
+            <th>Gravure 2</th>
+            <th>Caractéristique 1</th>
+            <th>Caractéristique 2</th>
+            <th>Spécialisation</th>
         </tr>
         </thead>
         <tbody>
@@ -34,13 +210,15 @@
             <td th:text="${subClass.engraving2}"></td>
             <td th:text="${subClass.characteristic1}"></td>
             <td th:text="${subClass.characteristic2}"></td>
-            <td style="width: 25%" th:text="${subClass.optimization}"></td>
+            <td style="width: 25%" th:text="${subClass.specialization}"></td>
         </tr>
         </tbody>
     </table>
 </div>
 <footer>
+    <p>Version ALPHA - Work in progress
     <p>Copyright Jonathan.G - Tous droits réservés</p>
 </footer>
+</div>
 </body>
 </html>

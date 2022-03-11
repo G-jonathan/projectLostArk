@@ -1,7 +1,9 @@
 package com.projetperso.projectlostark.models;
 
+import lombok.Data;
 import javax.persistence.*;
 
+@Data
 @Entity
 public class Item {
     @Id

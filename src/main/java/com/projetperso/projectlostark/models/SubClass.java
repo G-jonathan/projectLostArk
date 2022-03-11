@@ -15,5 +15,5 @@ public class SubClass {
     private String engraving2;
     private String characteristic1;
     private String characteristic2;
-    private String optimization;
+    private String specialization ;
 }

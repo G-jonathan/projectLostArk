@@ -9,7 +9,7 @@ public enum Engravings {
     AUGMENTATION_DES_PM_MAX("Augmentation des PM max"),
     BAGAREUR_EXPERT("Bagarreur expert"),
     BARRICADE("Barricade"),
-    BOUCLIER_AMELIORE(""),
+    BOUCLIER_AMELIORE("Bouclier amélioré"),
     BRISE_BOUCLIER("Brise-bouclier"),
     CAPITAINE_DE_RAID("Capitaine de raid"),
     CAPTURE_D_AME("Capture d'âme"),
@@ -45,36 +45,65 @@ public enum Engravings {
     SAUVETAGE_D_URGENCE("Sauvetage d'urgence"),
     TENACITE_INVAINCUE("Ténacité invaincue"),
 
+    //PISTOLANCIER
+    APTITUDE_AU_COMBAT("[Pistolancier]Aptitude au combat"),
+    CHEVALIER_SOLITAIRE("[Pistolancier]Chevalier solitaire"),
+
+    //BERSERKER
+    TECHNIQUE_DU_BERSERKER("[Berserker]Technique du berserker"),
+    CHAOS("[Berserker]Chaos"),
 
     //PALADIN
-    AURA_DE_BENEDICTION("Aura de bénédiction"),
-    JUGEMENT("Jugement"),
+    AURA_DE_BENEDICTION("[Paladin]Aura de bénédiction"),
+    JUGEMENT("[Paladin]Jugement"),
 
+    //ELEMENTISTE
+    AMELIORATION_DES_CONPETENCES_ESOTERIQUES("[Elementiste]Amélioration des compétences ésotériques"),
+    PREMIERE_INTENTION("[Elementiste]Première intention"),
 
-    C(""),
-    D(""),
-    E(""),
-    F(""),
-    G(""),
-    H(""),
-    I(""),
-    J(""),
-    K(""),
-    L(""),
-    M(""),
-    N(""),
-    O(""),
-    P(""),
-    Q(""),
-    R(""),
-    S(""),
-    T(""),
-    U(""),
-    V(""),
-    W(""),
-    X(""),
-    Y(""),
-    Z("");
+    //ESSENTIALISTE
+    DECHAINEMENT_ESOTERIQUE("[Essentialiste]Déchaînement ésotérique"),
+    COUP_FATAL("[Essentialiste]Coup fatal"),
+
+    //SPIRITE
+    ESPRIT_ROBUSTE("[Spirite]Esprit robuste"),
+    ENERGIE_DEBORDANTE("[Spirite]Énergie débordante"),
+
+    //PUGILISTE
+    ULTIME_TAIJUTSU("[Pugiliste]Ultime : Taijutsu"),
+    ENTRAINEMENT_DE_CHOC("[Pugiliste]Entraînement de choc"),
+
+    //FRANC-TIREUR
+    ARME_AMELIOREE("[Franc-tireur]Arme améliorée"),
+    PISTOLIER("[Franc-tireur]Pistolier"),
+
+    //FUSILIERE
+    HEURE_DE_LA_CHASSE("[Fusiliere]Heure de la chasse"),
+    PACIFICATEUR("[Fusiliere]Pacificateur"),
+
+    //SAGITAIRE
+    FIDELE_COMPAGNON("[Sagitaire]Fidèle compagnon"),
+    FRAPPE_MORTELLE("[Sagitaire]Frappe mortelle"),
+
+    //ARTILLEUR
+    PUISSANCE_DE_FEU_AMELIORE("[Artilleur]Puissance de feu améliorée"),
+    BARRAGE_AMELIORE("[Artilleur]Barrage amélioré"),
+
+    //SORCIERE
+    IGNITEUR("[Sorcière]Igniteur"),
+    REFLUX("[Sorcière]Reflux"),
+
+    //BARDE
+    DERNIER_RECOURS("[Barde]Dernier recours"),
+    COEUR_VAILLANT("[Barde]Cœur vaillant"),
+
+    //SANGUELAME
+    ENERGIE_RESIDUELLE("[Sanguelame]Énergie résiduelle"),
+    FUREUR("[Sanguelame]Fureur"),
+
+    //DEMONISTE
+    SUPPRESSION_PARFAITE("[Démoniste]Suppression parfaite"),
+    PULSION_DEMONIAQUE("[Démoniste]Pulsion démoniaque");
 
     final String engravingName;
 
