@@ -22,8 +22,14 @@ public class SubClassController {
 
     @PostMapping("/subClass/update")
     public String updateList(SubClass subClass, Model model) {
+        System.out.println("###########################################");
+        System.out.println("11111111111111111111111111111111111111111111");
+        System.out.println(subClass.toString());
         List<SubClass> resultList = subClassService.findSpecificSubClass(subClass);
         model.addAttribute("sub_class_list", resultList);
+        System.out.println("###########################################");
+        System.out.println("22222222222222222222222222222222222222222222");
+        System.out.println(resultList.toString());
         return "subClass/list";
     }
 }
