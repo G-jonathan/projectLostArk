@@ -56,27 +56,53 @@ public class SubClassServiceImpl implements ISubClassService {
                 & !subClass.getEngraving2().equals(EMPTY)
                 & subClass.getCharacteristic1().equals(EMPTY)
                 & subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndEngraving2(subClass.getEngraving1(), subClass.getEngraving2());
+            List<SubClass> engravingNormalOrderList = subClassRepository.findByEngraving1AndEngraving2(subClass.getEngraving1(), subClass.getEngraving2());
+            List<SubClass> engravingReverseOrderList = subClassRepository.findByEngraving1AndEngraving2(subClass.getEngraving2(), subClass.getEngraving1());
+            return Stream.concat(engravingNormalOrderList.stream(), engravingReverseOrderList.stream()).collect(Collectors.toList());
         } else if (!subClass.getEngraving1().equals(EMPTY)
                 & subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndCharacteristic1(subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1(subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1(subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (!subClass.getEngraving1().equals(EMPTY)
                 & subClass.getEngraving2().equals(EMPTY)
                 & subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1(subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1(subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (subClass.getEngraving1().equals(EMPTY)
                 & !subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving2AndCharacteristic1(subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1(subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1(subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (subClass.getEngraving1().equals(EMPTY)
                 & !subClass.getEngraving2().equals(EMPTY)
                 & subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving2AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1(subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1(subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (subClass.getEngraving1().equals(EMPTY)
                 & subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
@@ -88,63 +114,57 @@ public class SubClassServiceImpl implements ISubClassService {
                 & !subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order1List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order2List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic2(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> order3List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic1());
+            List<SubClass> order4List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic1());
+            List<SubClass> concatList1 = Stream.concat(order1List.stream(), order2List.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3List.stream(), order4List.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (subClass.getEngraving1().equals(EMPTY)
                 & !subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving2(),
-                    subClass.getCharacteristic1(),
-                    subClass.getCharacteristic2());
-            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving2(),
-                    subClass.getCharacteristic2(),
-                    subClass.getCharacteristic1());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
             List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
-            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving2(),
-                    subClass.getCharacteristic1(),
-                    subClass.getCharacteristic2());
-            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving2(),
-                    subClass.getCharacteristic2(),
-                    subClass.getCharacteristic1());
             List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
             return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (!subClass.getEngraving1().equals(EMPTY)
                 & subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving1(),
-                    subClass.getCharacteristic1(),
-                    subClass.getCharacteristic2());
-            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving1(),
-                    subClass.getCharacteristic2(),
-                    subClass.getCharacteristic1());
+            List<SubClass> order1list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order2list = subClassRepository.findByEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
+            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
             List<SubClass> concatList1 = Stream.concat(order1list.stream(), order2list.stream()).toList();
-            List<SubClass> order3list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving1(),
-                    subClass.getCharacteristic1(),
-                    subClass.getCharacteristic2());
-            List<SubClass> order4list = subClassRepository.findByEngraving1AndCharacteristic1AndCharacteristic2(
-                    subClass.getEngraving1(),
-                    subClass.getCharacteristic2(),
-                    subClass.getCharacteristic1());
             List<SubClass> concatList2 = Stream.concat(order3list.stream(), order4list.stream()).toList();
             return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (!subClass.getEngraving1().equals(EMPTY)
                 & !subClass.getEngraving2().equals(EMPTY)
                 & subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndEngraving2AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order1List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order2List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic2(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> order3List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic2());
+            List<SubClass> order4List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic2());
+            List<SubClass> concatList1 = Stream.concat(order1List.stream(), order2List.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3List.stream(), order4List.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         } else if (!subClass.getEngraving1().equals(EMPTY)
                 & !subClass.getEngraving2().equals(EMPTY)
                 & !subClass.getCharacteristic1().equals(EMPTY)
                 & !subClass.getCharacteristic2().equals(EMPTY)) {
-            return subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order1List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order2List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving1(), subClass.getEngraving2(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
+            List<SubClass> order3List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic1(), subClass.getCharacteristic2());
+            List<SubClass> order4List = subClassRepository.findByEngraving1AndEngraving2AndCharacteristic1AndCharacteristic2(subClass.getEngraving2(), subClass.getEngraving1(), subClass.getCharacteristic2(), subClass.getCharacteristic1());
+            List<SubClass> concatList1 = Stream.concat(order1List.stream(), order2List.stream()).toList();
+            List<SubClass> concatList2 = Stream.concat(order3List.stream(), order4List.stream()).toList();
+            return Stream.concat(concatList1.stream(), concatList2.stream()).collect(Collectors.toList());
         }
         return subClassRepository.findAll();
     }
