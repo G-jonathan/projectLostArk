@@ -1,5 +1,5 @@
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Berserker', 'Guerrier', '[Berserker]Technique du berserker', 'Maître de l''embuscade', 'Spécialisation', 'Dégats critiques', 'Technique Berserker Raid');
+VALUES ('Berserker', 'Guerrier', '[Berserker]Technique du berserker', 'Maître de l_embuscade', 'Spécialisation', 'Dégats critiques', 'Technique Berserker Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Berserker', 'Guerrier', '[Berserker]Chaos', 'Ténacité invaincue', 'Rapidité', 'Dégats critiques', 'Mayhem Berserker Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
@@ -15,17 +15,17 @@ VALUES ('Sorcière', 'Mage', '[Sorcière]Igniteur', 'Attaque totale', 'Spéciali
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Sorcière', 'Mage', '[Sorcière]Reflux', 'Dague précise', 'Dégats critiques', 'Rapidité', 'Reflux Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Démoniste', 'Assassin', '[Démoniste]Suppression parfaite', 'Maître de l''embuscade', 'Dégats critiques', 'Rapidité', 'Perfect Suppression Raid');
+VALUES ('Démoniste', 'Assassin', '[Démoniste]Suppression parfaite', 'Maître de l_embuscade', 'Dégats critiques', 'Rapidité', 'Perfect Suppression Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Démoniste', 'Assassin', '[Démoniste]Pulsion démoniaque', 'Adrénaline', 'Dégats critiques', 'Spécialisation', 'Demonic impulse Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Sanguelame', 'Assassin', '[Sanguelame]Fureur', 'Maître de l''embuscade', 'Spécialisation', 'Dégats critiques', 'Surge Raid');
+VALUES ('Sanguelame', 'Assassin', '[Sanguelame]Fureur', 'Maître de l_embuscade', 'Spécialisation', 'Dégats critiques', 'Surge Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Sanguelame', 'Assassin', '[Sanguelame]Énergie résiduelle', 'Charge lourde', 'Spécialisation', 'Dégats critiques', 'Remaining Energy Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Essentialiste', 'Martialiste', '[Essentialiste]Déchaînement ésotérique', 'Maître de l''embuscade', 'Rapidité', 'Dégats critiques', 'Esoteric Flurry Striker Raid ');
+VALUES ('Essentialiste', 'Martialiste', '[Essentialiste]Déchaînement ésotérique', 'Maître de l_embuscade', 'Rapidité', 'Dégats critiques', 'Esoteric Flurry Striker Raid ');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Essentialiste', 'Martialiste', '[Essentialiste]Coup fatal', 'Maître de l''embuscade', 'Spécialisation', 'Dégats critiques', 'Death Blow Striker Raid ');
+VALUES ('Essentialiste', 'Martialiste', '[Essentialiste]Coup fatal', 'Maître de l_embuscade', 'Spécialisation', 'Dégats critiques', 'Death Blow Striker Raid ');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Elementiste', 'Martialiste', '[Elementiste]Amélioration des compétences ésotériques', 'Capitaine de raid', 'Spécialisation', 'Rapidité', 'Esoteric Skill Enhancement Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
@@ -39,12 +39,12 @@ VALUES ('Spirite', 'Martialiste', '[Spirite]Esprit robuste', 'Dague précise', '
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
 VALUES ('Spirite', 'Martialiste', '[Spirite]Énergie débordante', 'Adrénaline', 'Spécialisation', 'Dégats critiques', 'Energy Overflow Soulfist Raid ');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Fusiliere', 'Tireur d''elite', '[Fusiliere]Pacificateur', 'Maître de la frappe', 'Dégats critiques', '?', 'Peacemaker Gunslinger Raid');
+VALUES ('Fusiliere', 'Tireur d_elite', '[Fusiliere]Pacificateur', 'Maître de la frappe', 'Dégats critiques', '?', 'Peacemaker Gunslinger Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Fusiliere', 'Tireur d''elite', '[Fusiliere]Heure de la chasse', '[Fusiliere]Pacificateur', 'Dégats critiques', '?', 'Time to Hunt Gunslinger Raid');
+VALUES ('Fusiliere', 'Tireur d_elite', '[Fusiliere]Heure de la chasse', '[Fusiliere]Pacificateur', 'Dégats critiques', '?', 'Time to Hunt Gunslinger Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Artilleur', 'Tireur d''elite', '[Artilleur]Puissance de feu améliorée', 'Maître de la frappe', 'Rapidité', 'Dégats critiques', 'Firepower Enhancement Artillerist Raid');
+VALUES ('Artilleur', 'Tireur d_elite', '[Artilleur]Puissance de feu améliorée', 'Maître de la frappe', 'Rapidité', 'Dégats critiques', 'Firepower Enhancement Artillerist Raid');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Franc-Tireur', 'Tireur d''élite', '[Franc-tireur]Pistolier', 'Adrénaline', 'Spécialisation', 'Dégats critiques', 'Pistoleer Deadeye Raid ');
+VALUES ('Franc-Tireur', 'Tireur d_élite', '[Franc-tireur]Pistolier', 'Adrénaline', 'Spécialisation', 'Dégats critiques', 'Pistoleer Deadeye Raid ');
 INSERT INTO SUB_CLASS(name, archetype, engraving1, engraving2, characteristic1, characteristic2, specialization)
-VALUES ('Sagitaire', 'Tireur d''elite', '[Sagitaire]Frappe mortelle', '[Sagitaire]Fidèle compagnon', 'Dégats critiques', '?', 'Sharpshooter Raid Guide');
+VALUES ('Sagitaire', 'Tireur d_elite', '[Sagitaire]Frappe mortelle', '[Sagitaire]Fidèle compagnon', 'Dégats critiques', '?', 'Sharpshooter Raid Guide');

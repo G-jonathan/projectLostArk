@@ -8,5 +8,6 @@ public class ProjectLostArkApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectLostArkApplication.class, args);
+        //test
     }
 }
